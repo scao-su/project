@@ -1,0 +1,16 @@
+h1{
+  color: red;
+}
+body{
+  background-color: aliceblue;
+}
+
+@media (max-width: 900px){
+  nav span{
+    display: none;
+  }
+  nav a{
+    display: block;
+    margin-bottom: 10px;
+  }
+}
