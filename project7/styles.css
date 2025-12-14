@@ -155,3 +155,8 @@ li { margin: 6px 0; }
 @media (max-width: 800px){
   .index-grid{ grid-template-columns: 1fr; }
 }
+
+.sr-only {
+  font-size: 0;
+  line-height: 0;
+}
