@@ -131,3 +131,27 @@ li { margin: 6px 0; }
 .dropdown:focus-within .dropdown-content {
   display: block;
 }
+.index-grid{
+  display: grid;
+  grid-template-columns: 3fr 1fr; 
+  gap: 40px;
+}
+
+
+.main-text{
+  grid-column: 1;
+}
+
+.game-list{
+  grid-column: 2;
+}
+
+.game-card{
+  padding: 12px;
+  text-align: center;
+}
+
+/* mobile */
+@media (max-width: 800px){
+  .index-grid{ grid-template-columns: 1fr; }
+}
