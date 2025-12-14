@@ -1,16 +1,80 @@
-h1{
-  color: red;
-}
-body{
-  background-color: aliceblue;
+/* ===== Base reset / layout ===== */
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
 }
 
-@media (max-width: 900px){
-  nav span{
-    display: none;
-  }
-  nav a{
-    display: block;
-    margin-bottom: 10px;
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header, footer {
+  padding: 16px 0;
+}
+
+h1 {
+  text-align: center;
+  margin: 10px 0;
+}
+
+/* ===== Nav ===== */
+nav {
+   text-align: left;
+  margin-top: 8px;
+}
+
+nav a {
+  display: inline-block;
+  padding: 8px 12px;
+  text-decoration: none;
+  border-radius: 6px;
+
+  /* Learn Something New: transition + transform */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+nav a:hover {
+  background-color: #7ce2ff;
+  transform: scale(1.05);
+}
+
+/* ===== Sections / spacing ===== */
+.main-section {
+  padding: 10px 0 20px;
+}
+
+/* ===== Images ===== */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 10px 0;
+}
+
+/* ===== (Optional) nicer list spacing ===== */
+ul { padding-left: 20px; }
+li { margin: 6px 0; }
+
+/* ===== Design page 2-column layout (for design.html) ===== */
+.two-col {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.two-col > section {
+  flex: 1;
+  min-width: 0;
+}
+
+/* Responsive stacking on mobile */
+@media (max-width: 700px) {
+  .two-col {
+    flex-direction: column;
   }
 }
